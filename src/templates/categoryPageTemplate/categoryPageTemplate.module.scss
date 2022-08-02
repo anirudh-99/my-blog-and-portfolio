@@ -1,0 +1,41 @@
+// All these are starting points of breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+.categoryPageContainer {
+    margin: 0 auto;
+    max-width: 860px;
+    padding: 1.45rem 1.0875rem;
+    font-family: 'Nunito', 'sans-serif';
+
+    @media (max-width:$lg){
+        padding-top: 0px;
+
+        h3{
+            margin: 10px 0;
+            font-size: 20px;
+        }
+    }
+
+    h1,h2 {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 10px 0 5px 0;
+        text-shadow: 2px 2px 15px rgb(238, 137, 5);
+
+        @media (max-width: $lg){
+            margin: 10px 0;
+        }
+    }
+
+
+
+    h3 a{
+        
+        color: rgb(18, 93, 128);
+    }
+
+}

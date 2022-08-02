@@ -1,0 +1,20 @@
+.categories_heading {
+    font-family: 'Nunito', 'sans-serif';
+    text-align: center;
+    margin-top: 10vh;
+    text-shadow: 2px 2px 15px rgb(238, 137, 5);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    &>* {
+        margin: 10px;
+    }
+
+}

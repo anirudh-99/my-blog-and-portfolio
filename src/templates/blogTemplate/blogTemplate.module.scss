@@ -1,0 +1,112 @@
+// All these are starting points of breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+.blogPostContainer {
+
+    ::selection {
+        background: rgba(157, 203, 230, 0.986);
+    }
+
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 1.45rem 1.0875rem;
+    font-family: 'Nunito',
+    'sans-serif';
+
+    @media (max-width:$lg){
+        padding-top: 0px;
+    }
+
+    .CreationDateAndTimeToRead {
+        color: #606060;
+        font-size: 14px;
+
+        @media (max-width:$lg){
+            font-size: 15px;
+        }
+
+    }
+
+    .blogPostTitle {
+        text-align: center;
+        font-size: 2em;
+        font-weight: 800;
+        margin: 10px 0 5px 0;
+        border-bottom: 3px solid black;
+        text-shadow: 2px 2px 15px rgb(238, 137, 5);
+
+        @media (max-width:$lg){
+            font-weight: 700;
+            border-bottom-width: 1px;
+            margin-top: 0px;
+        }
+    }
+
+    .blogPostTableOfContentsHeading {
+        text-shadow: 2px 2px 15px rgb(240, 38, 223);
+
+        @media(max-width: $lg){
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .blogPostTableOfContents {
+        a {
+            color: rgb(18, 93, 128);
+        }
+
+        p {
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+
+        ul,
+        li {
+            list-style-type: "-";
+            padding-inline-start: 1ch;
+        }
+
+    }
+
+    .blogPostContent {
+        p {
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            position: relative;
+        }
+
+        a::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 70%;
+            left: -0.1px;
+            right: -0.1px;
+            bottom: 0;
+            transition: top 0.1s ease-in-out;
+            background-color: rgba(228, 202, 58, 0.911);
+        }
+
+        a:hover::after {
+            top: 0;
+        }
+
+        @media(max-width: $lg){
+            h1,h2,h3{
+                margin: 10px 0;
+            }
+            p{
+                margin: 10px 0;
+                font-size: 17px;
+            }
+        }
+    }
+}

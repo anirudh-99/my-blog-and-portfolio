@@ -1,0 +1,23 @@
+.wrapper{
+    font-family: 'Nunito','sans-serif';
+    font-size: 1.2em;
+    padding: 5px 10px;
+    width:fit-content;
+    border: 3px solid black;
+    border-radius: 10px;
+
+    a{
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+    .count{
+        margin-left: 10px;
+    }
+
+    &:hover{
+        box-shadow: 1px 1px 20px rgb(43, 40, 40);
+    }
+}
